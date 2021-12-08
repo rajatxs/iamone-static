@@ -2,7 +2,7 @@
   --page-font-stack: "Inter", Arial, Helvetica, sans-serif;
 
   --page-selection: royalblue;
-  --page-foreground: #fff;
+  --page-foreground: #000;
 
   --page-root-width: 100%;
   --page-root-height: 100%;
@@ -26,10 +26,10 @@
   --page-social-icon-gap: 1pt;
   --page-social-icon-color: inherit;
 
-  --page-custom-link-gap: 12pt;
-  --page-custom-link-width: 100%;
-  --page-custom-link-radius: 8pt;
-  --page-custom-link-background: transparent;
-  --page-custom-link-foreground: inherit;
-  --page-custom-link-border: 1px solid #ddd;
+  --page-link-gap: 12pt;
+  --page-link-width: 100%;
+  --page-link-radius: 8pt;
+  --page-link-background: transparent;
+  --page-link-foreground: inherit;
+  --page-link-border: 1px solid #ddd;
 }

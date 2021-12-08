@@ -1,4 +1,5 @@
 
+/* --------- Page content and layout --------- */
 .page__root ::selection {
   background-color: var(--page-selection);
   color: var(--page-foreground);
@@ -9,6 +10,7 @@
   height: var(--page-root-height);
   font-family: var(--page-font-stack);
   background-color: var(--page-root-background);
+  color: var(--page-foreground);
 }
 
 .page__root .page__content {
@@ -24,7 +26,6 @@
     --page-content-width: var(--page-content-width);
   }
 }
-
 .page__content {
   display: flex;
   flex-direction: column;
@@ -41,6 +42,8 @@
   height: auto;
   background-color: var(--page-content-background);
 }
+
+/* --------- Page user avatar --------- */
 .page__user-avatar {
   margin-top: 12pt;
   display: inline-block;
@@ -55,6 +58,8 @@
   background-size: 100%;
   background-repeat: no-repeat;
 }
+
+/* --------- Page user profile --------- */
 .page__user-profile {
   margin-top: 20pt;
   text-align: center;
@@ -66,13 +71,15 @@
   line-height: 1rem;
   font-size: 102%;
 }
+
+/* --------- Page socials --------- */
 .page__socials {
   display: flex;
   margin-top: 3pt;
-  margin-bottom: 5pt;
+  margin-bottom: 3pt;
   gap: var(--page-social-icon-gap);
 }
-.page__social-link {
+.page__social {
   display: inline-flex;
   width: 32pt;
   height: 32pt;
@@ -80,40 +87,42 @@
   align-items: center;
   border-radius: 100%;
 }
-.page__social-link-icon {
+.page__social-icon {
   display: inherit;
 }
-.page__social-link-icon svg {
+.page__social-icon svg {
   fill: var(--page-social-icon-color);
   width: var(--page-social-icon-width);
   height: var(--page-social-icon-height);
 }
-.page__custom-links {
-  margin-top: 4pt;
+
+/* --------- Page links --------- */
+.page__links {
+  margin-top: 10pt;
   width: 100%;
   display: flex;
   align-items: center;
-  gap: var(--page-custom-link-gap);
+  gap: var(--page-link-gap);
   flex-direction: column;
 }
-.page__custom-link {
-  width: calc(var(--page-custom-link-width) - 65pt);
+.page__link {
+  width: calc(var(--page-link-width) - 65pt);
   padding: 12pt 16pt;
-  border-radius: var(--page-custom-link-radius);
-  border: var(--page-custom-link-border);
-  background-color: var(--page-custom-link-background);
-  color: var(--page-custom-link-foreground);
+  border-radius: var(--page-link-radius);
+  border: var(--page-link-border);
+  background-color: var(--page-link-background);
+  color: var(--page-link-foreground);
   transition: transform 120ms ease;
 }
-.page__custom-link:hover {
+.page__link:hover {
   transform: scale(1.02);
 }
-.page__custom-link-metadata {
-  color: var(--page-custom-link-foreground);
+.page__link-metadata {
+  color: var(--page-link-foreground);
 }
-.page__custom-link-metadata-title {
+.page__link-metadata-title {
   line-height: 1.04rem;
 }
-.page__custom-link-metadata-desc {
+.page__link-metadata-desc {
   font-size: 90%;
 }
