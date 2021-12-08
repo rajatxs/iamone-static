@@ -1,4 +1,8 @@
 
+.page__body {
+  background-color: var(--page-root-background);
+}
+
 /* --------- Page content and layout --------- */
 .page__root ::selection {
   background-color: var(--page-selection);
@@ -26,6 +30,26 @@
     --page-content-width: var(--page-content-width);
   }
 }
+
+.page__body::-webkit-scrollbar {
+  width: var(--page-scroll-size);
+  height: var(--page-scroll-size);
+}
+.page__body::-webkit-scrollbar-thumb {
+  border-radius: 25px;
+  background-color: transparent;
+  transition: background-color 70ms linear;
+}
+.page__body:hover::-webkit-scrollbar-thumb {
+  background-color: var(--page-scroll-color);
+}
+.page__body::-webkit-scrollbar-thumb:hover {
+  background-color: var(--page-scroll-color);
+}
+.page__body::-webkit-scrollbar-thumb:active {
+  background-color: var(--page-scroll-active-color);
+}
+
 .page__content {
   display: flex;
   flex-direction: column;
@@ -41,6 +65,7 @@
   min-height: var(--page-content-height);
   height: auto;
   background-color: var(--page-content-background);
+  color: var(--page-content-foreground);
 }
 
 /* --------- Page user avatar --------- */

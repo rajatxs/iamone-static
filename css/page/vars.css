@@ -4,9 +4,14 @@
   --page-selection: royalblue;
   --page-foreground: #000;
 
+  --page-scroll-size: 6pt;
+  --page-scroll-color: auto;
+  --page-scroll-active-color: auto;
+
   --page-root-width: 100%;
   --page-root-height: 100%;
   --page-root-background: #FFF;
+  --page-root-foreground: var(--page-foreground);
 
   --page-content-width: auto;
   --page-content-height: 100%;
@@ -16,6 +21,7 @@
   --page-content-justify: flex-start;
   --page-content-align: center;
   --page-content-background: #fff;
+  --page-content-foreground: var(--page-foreground);
 
   --page-user-avatar-image-width: 71.4pt;
   --page-user-avatar-image-height: 71.4pt;
