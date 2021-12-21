@@ -14,9 +14,9 @@
   --page-root-foreground: var(--page-foreground);
 
   --page-content-width: auto;
-  --page-content-height: 100%;
+  --page-content-height: calc(100% - 16pt - 58pt);
   --page-content-top: 12pt;
-  --page-content-bottom: 2pt;
+  --page-content-bottom: 58pt;
   --page-content-shadow: 0 4px 16px rgba(210, 210, 210, 0.6);
   --page-content-justify: flex-start;
   --page-content-align: center;
@@ -33,7 +33,7 @@
   --page-social-icon-color: inherit;
 
   --page-link-gap: 10pt;
-  --page-link-width: 96%;
+  --page-link-width: 100%;
   --page-link-radius: 8pt;
   --page-link-background: transparent;
   --page-link-foreground: inherit;
