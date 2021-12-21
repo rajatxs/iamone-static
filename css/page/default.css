@@ -51,6 +51,7 @@
 }
 
 .page__content {
+  position: relative;
   display: flex;
   flex-direction: column;
   margin-left: auto;
@@ -150,4 +151,14 @@
 }
 .page__link-metadata-desc {
   font-size: 90%;
+}
+
+.page__logo {
+  position: absolute;
+  bottom: 34pt;
+}
+.page__logo-image {
+  height: 25pt;
+  width: auto;
+  fill: var(--page-foreground);
 }
