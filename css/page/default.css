@@ -149,8 +149,13 @@
 .page__link-metadata-title {
   line-height: 1.04rem;
 }
-.page__link-metadata-desc {
+.page__link-metadata-desc,
+.page__link-metadata-href {
   font-size: 90%;
+}
+.page__link-metadata-href {
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .page__logo {
