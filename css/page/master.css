@@ -95,3 +95,26 @@ body.page__body {
   letter-spacing: -0.005625rem;
   font-weight: 600;
 }
+
+[data-page-tooltip] {
+  position: relative;
+  cursor: default;
+}
+
+[data-page-tooltip]:hover::after {
+  content: attr(data-page-tooltip);
+  display: block;
+  position: absolute;    
+  width: auto;
+  top: 100%;
+  left: 50%;
+  width: 240px;
+  transform: translateX(-50%);
+  padding: 12px 16px;
+  font-size: 80%;
+  line-height: 1.1rem;
+  z-index: 1;
+  background-color: var(--page-foreground);
+  color: var(--page-root-background);
+  border-radius: 6px;
+}
