@@ -97,6 +97,9 @@
   line-height: 1rem;
   font-size: 102%;
 }
+.page__user-unverified-label {
+  color: rgb(255, 41, 41);
+}
 
 /* --------- Page socials --------- */
 .page__socials {
