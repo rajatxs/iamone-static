@@ -112,9 +112,10 @@ body.page__body {
   transform: translateX(-50%);
   padding: 12px 16px;
   font-size: 80%;
-  line-height: 1.1rem;
-  z-index: 1;
+  line-height: 1.18rem;
+  font-family: var(--page-font-stack);
   background-color: var(--page-foreground);
-  color: var(--page-root-background);
+  color: var(--page-background);
   border-radius: 6px;
+  z-index: 10;
 }

@@ -1,27 +1,20 @@
 :root {
   --page-font-stack: "Inter", Arial, Helvetica, sans-serif;
 
-  --page-selection: royalblue;
+  --page-background: #FFF;
   --page-foreground: #000;
 
   --page-scroll-size: 6pt;
   --page-scroll-color: auto;
   --page-scroll-active-color: auto;
 
-  --page-root-width: 100%;
-  --page-root-height: 100%;
-  --page-root-background: #FFF;
-  --page-root-foreground: var(--page-foreground);
-
-  --page-content-width: auto;
-  --page-content-height: calc(100% - 16pt - 58pt);
-  --page-content-top: 12pt;
-  --page-content-bottom: 58pt;
-  --page-content-shadow: 0 4px 16px rgba(210, 210, 210, 0.6);
-  --page-content-justify: flex-start;
-  --page-content-align: center;
-  --page-content-background: #fff;
-  --page-content-foreground: var(--page-foreground);
+  --page-width: 520px;
+  --page-height: calc(100% - 16pt - 58pt);
+  --page-top: 12pt;
+  --page-bottom: 58pt;
+  --page-shadow: none;
+  --page-justify: flex-start;
+  --page-align: center;
 
   --page-user-avatar-image-width: 71.4pt;
   --page-user-avatar-image-height: 71.4pt;
