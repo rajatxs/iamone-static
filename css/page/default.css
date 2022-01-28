@@ -17,12 +17,12 @@
   background-color: var(--page-scroll-active-color);
 }
 .page__body ::selection {
-  background-color: var(--page-foreground);
-  color: var(--page-background);
+  background-color: var(--page-foreground-color);
+  color: var(--page-background-color);
 }
 
 .page__body {
-  background-color: var(--page-background);
+  background-color: var(--page-background-color);
   background-image: var(--page-background-image);
   background-size: 100% auto;
   background-attachment: fixed;
@@ -59,7 +59,7 @@
   min-height: var(--page-height);
   height: auto;
   background-color: transparent;
-  color: var(--page-foreground);
+  color: var(--page-foreground-color);
 }
 
 /* --------- Page user avatar --------- */
@@ -132,15 +132,16 @@
   padding: 12pt 16pt;
   border-radius: var(--page-link-radius);
   border: var(--page-link-border);
-  background-color: var(--page-link-background);
-  color: var(--page-link-foreground);
+  background-color: var(--page-link-background-color);
+  background-image: var(--page-link-background-image);
+  color: var(--page-link-foreground-color);
   transition: transform 120ms ease;
 }
 .page__link:hover {
   transform: scale(1.02);
 }
 .page__link-metadata {
-  color: var(--page-link-foreground);
+  color: var(--page-link-foreground-color);
 }
 .page__link-metadata-title {
   line-height: 1.4rem;
@@ -161,5 +162,5 @@
 .page__logo-image {
   height: 25pt;
   width: auto;
-  fill: var(--page-foreground);
+  fill: var(--page-foreground-color);
 }

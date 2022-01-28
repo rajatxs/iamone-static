@@ -114,8 +114,8 @@ body.page__body {
   font-size: 80%;
   line-height: 1.18rem;
   font-family: var(--page-font-stack);
-  background-color: var(--page-foreground);
-  color: var(--page-background);
+  background-color: var(--page-foreground-color);
+  color: var(--page-background-color);
   border-radius: 6px;
   z-index: 10;
 }
