@@ -135,6 +135,7 @@
   background-color: var(--page-link-background-color);
   background-image: var(--page-link-background-image);
   color: var(--page-link-foreground-color);
+  box-shadow: var(--page-link-shadow);
   transition: transform 120ms ease;
 }
 .page__link:hover {
