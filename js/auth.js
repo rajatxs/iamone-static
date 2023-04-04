@@ -9,7 +9,7 @@ window.onload = function () {
       get remoteApiServerUrl() {
          return (this.env === 'development') ?
             "http://localhost:5000" :
-            "https://api.iamone.link";
+            "https://iamone-api.fly.dev";
       },
 
       saveAuthTokens(obj = {}) {
